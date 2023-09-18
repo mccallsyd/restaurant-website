@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DEMO Pizza Restaurant</title>
+
+	<!--Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Rubik&display=swap" rel="stylesheet">
+
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+	<!--Custom CSS-->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top opacity-hover-off" id="myNavbar">
+		<div class="container-fluid">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#" style="font-size: 2rem;">HOME</a></li>
+				<li class="nav-item"><a class="nav-link" href="#menu" style="font-size: 2rem;">MENU</a></li>
+				<li class="nav-item"><a class="nav-link" href="#about" style="font-size: 2rem;">ABOUT</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact" style="font-size: 2rem;">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--Header with Image-->
+	<header class="bg-img d-flex flex-column justify-content-between" id="home">
+		<div></div>
+		<div class="d-flex flex-column text-center">
+			<span class="display-1 text-white">Really<br>Good Pizza</span>
+			<span class="display-6 text-white">Plant-Based Pizza for a Cause</span>
+			<p><a href="#menu" class="btn btn-lg btn-dark hover-btn fs-2">Let me see the Menu</a></p>
+		</div>
+		<div class="d-flex">
+			<span class="bg-dark text-white p-3 h2">Open from 10am to 11pm - Call 555-555-5555</span>
+		</div>
+	</header>
+
+	<!--Menu Container-->
+	<div class="container-fluid bg-black text-white py-5" id="menu">
+		<div class="container">
+			<h1 class="text-center display-2 mb-5">THE MENU</h1>
+			<div class="text-center border border-dark">
+				<div class="d-flex">
+					<a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" class="col-4 tablink p-3 hover-red" id="mainLink">Pizza</a>
+					<a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');" class="col-4 tablink p-3 hover-red">Pasta</a>
+					<a href="javascript:void(0)" onclick="openMenu(event, 'Starter');" class="col-4 tablink p-3 hover-red">Starters</a>
+				</div>
+			</div>
+
+			<!--Pizza Menu-->
+			<div id="Pizza" class="container-fluid menu p-4 bg-white">
+				<!--Margherita-->
+				<div class="d-flex justify-content-between align-items baseline">
+					<h1 class="mb-0 display-3"><b>Margherita</b></h1>
+					<span class="badge bg-dark text-white">$12.50</span>
+				</div>
+				<p class="text-muted">Fresh tomatoes, fresh almond mozzarella, fresh basil.</p>
+				<hr class="text-muted">
+			</div>
+		
+		
+			<!--Pasta Menu-->
+			<div id="Pasta" class="container-fluid menu p-4 bg-white">
+				<!--Lasagne-->
+				<div class="d-flex justify-content-between align-items baseline">
+					<h1 class="mb-0 display-3"><b>Lasagne</b></h1>
+					<span class="badge bg-dark text-white">$13.50</span>
+				</div>
+				<p class="text-muted">Special sauce, plant-based bécahmel, ground plant-based beef, fresh veggies.</p>
+				<hr class="text-muted">
+			</div>
+
+			<!--Starter Menu-->
+			<div id="Starter" class="container-fluid menu p-4 bg-white">
+				<!--Soup of the Day-->
+				<div class="d-flex justify-content-between align-items baseline">
+					<h1 class="mb-0 display-3"><b>Soup of the Day </b><span class="badge bg-grey text-white small-tag">Seasonal</span></h1>
+					<span class="badge bg-dark text-white">$5.50</span>
+				</div>
+				<p class="text-muted">Ask about today's selection.</p>
+				<hr class="text-muted">
+			</div>
+		</div>
+	</div>
+
+	<!--About Container-->
+	<div class="about container-fluid py-5 text-white" id="about">
+		<div class="container">
+			<h1 class="text-center display-2 mb-3">ABOUT</h1>
+			<h1 class="display-4"><b>Hours:</b></h1>
+			<div class="row fs-2">
+				<div class="col-6">
+					<p>Sun & Mon CLOSED</p>
+					<p>Tuesday 10:00am - 11:00pm</p>
+					<p>Wednesday 10:00am - 11:00pm</p>
+				</div>
+				<div class="col-6">
+					<p>Thursday 10:00am - 11:00pm</p>
+					<p>Friday 10:00am - 11:00pm</p>
+					<p>Saturday 10:00am - 11:00pm</p>
+				</div>
+			</div>
+		
+			<h1 class="display-4"><b>History</b></h1>
+			<p class="fs-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit ut aliquam purus sit. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Porta nibh venenatis cras sed felis. Aliquam etiam erat velit scelerisque in dictum non. Ut venenatis tellus in metus vulputate eu scelerisque. Venenatis lectus magna fringilla urna porttitor rhoncus. Ut venenatis tellus in metus vulputate eu scelerisque. Sit amet aliquam id diam maecenas ultricies mi eget mauris.</p>
+			<div class="row">
+				<div class="col-lg-9 col-med-8 col-sm-12">
+					<p class='fs-2'><b>Lead Chef</b> - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora praesentium aliquid, nobis recusandae laudantium, officia ipsa, exercitationem voluptas aspernatur dignissimos nesciunt optio numquam amet minima ullam atque odio modi debitis itaque eum!</p>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12 text-end">
+					<img src="assets/lead-chef.jpg" alt="chef" style="width: 200px;" class="rounded-circle">
+				</div>
+				<p class="fs-2 text-center">We are proud of our food!</p>
+				<img src="assets/interior.jpg" alt="restaurant" style="width: 100%;" class="my-3">
+			</div>
+		</div>
+	</div>
+
+	<!--Contact-->
+	<div class="container-fluid bg-secondary text-white py-5 fs-2" id="contact">
+		<div class="container">
+			<h1 class="text-center display-2 mb-5"></h1>
+			<p>Find us at some address at some place or call us at 05050515-122330</p>
+			<p><span class="badge bg-dark">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.</p>
+			<p><b>Contact</b> us to reserve a table, ask for today's special, or just send us a message.</p>
+			<form action="" target="_blank">
+				<div class="mb-3">
+					<input type="text" class="form-control extra-large" placeholder="Name" required name="Name">
+				</div>
+				<div class="mb-3">
+					<input type="number" class="form-control extra-large" placeholder="How many people?" required name="People">
+				</div>
+				<div class="mb-3">
+					<input type="datetime-local" class="form-control extra-large" placeholder="Date and Time" required name="Date" value="date.now()">
+				</div>
+				<div class="mb-3">
+					<input type="text" class="form-control extra-large" placeholder="Message/Special Request" required name="Message">
+				</div>
+				<div class="mb-3">
+					<button type="submit" class="btn btn-light btn-lg btn-block fs-2">Submit</button>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+
+	<footer class="text-center bg-dark text-white py-4">
+		<p class="fs-3 mb-0">Original Design Inspired by <a href="https://www.w3schools.com/" title="W3 Schools" target="_blank" class="text-white">W3 Schools</a></p>
+		<p>Built with Bootstrap and CSS by <a href="https://designsbysyd.netlify.app/" title="DesignsbySyd" target="_blank" class="text-white">Sydney McCall</a></p>
+	</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

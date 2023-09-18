@@ -1,0 +1,112 @@
+body, html {
+	height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h5{
+	font-family: 'Rubik', sans-serif;
+}
+
+/*Custom Styles for Navbar*/
+
+.opacity-hover-off{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.opacity-hover-off:hover{
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar-nav .nav-link{
+	color: white;
+	font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover{
+	background-color: white;
+	color: black;
+}
+
+/*Hide on small screens*/
+@media (max-width: 992px){
+	#myNavbar {
+		display: none;
+	}
+}
+
+/*Custom styles for Header*/
+.bg-img{
+	background-image: url('assets/neon-sign.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+}
+
+.btn{
+	min-width: 250px;
+}
+
+.btn.hover-btn:hover {
+	background-color: lightgrey;
+	color: black;
+	text-decoration: underline;
+}
+
+/*Custom styles for Menu Box*/
+.bg-black {
+	background-color: black;
+}
+
+.tablink{
+	text-decoration: none;
+	color: white;
+}
+
+.hover-red:hover {
+	background-color: rgba(188, 65, 41, 0.5);
+	color: white;
+	text-decoration: none;
+}
+
+.active-tab {
+	background-color: rgba(193, 70, 42);
+	color: white;
+	text-decoration: none;
+}
+
+.border-dark {
+	border-color: darkgrey;
+}
+
+.badge {
+	padding: .6em .8em;
+}
+
+.small-tag {
+	padding: .3em .3em;
+}
+
+.bg-red {
+	background-color: red;
+	color: white;
+}
+
+.bg-grey {
+	background-color: grey;
+}
+
+.menu h1 {
+	color: black;
+}
+
+/*Custom Styles for About*/
+
+.about{
+	background-color: rgb(51, 78, 85);
+}
+
+/*XL Form Boxes*/
+
+.extra-large {
+	height: 60px;
+	font-size: 1.8rem;
+
+}
